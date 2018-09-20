@@ -16,4 +16,10 @@ class pagesController extends Controller
       $woeid = $request->woeid;
       return view('weatherdaily',compact('woeid'));
     }
+
+    public function SearchResult(Request $request, $woeid)
+    {
+      $woeid = $request->woeid;
+      return view('searchresult',compact('woeid'));
+    }
 }

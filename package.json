@@ -23,6 +23,7 @@
     },
     "dependencies": {
         "moment": "^2.22.2",
+        "sweetalert": "^2.1.0",
         "vue-moment": "^4.0.0"
     }
 }

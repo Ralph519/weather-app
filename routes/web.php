@@ -12,6 +12,7 @@
 */
 Route::get('home', 'pagesController@HomePage');
 Route::get('weather/{woeid}', 'pagesController@WeatherPage');
+Route::get('search/{city}/{woeid}', 'pagesController@SearchResult');
 
 Route::get('/', function () {
     return redirect('home');

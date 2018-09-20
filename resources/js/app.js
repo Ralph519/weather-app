@@ -18,7 +18,12 @@ window.bus = new Vue();
 
 Vue.component("weather-main", require("./components/weather-main.vue"));
 Vue.component("weather-daily", require("./components/weather-daily.vue"));
+Vue.component("search", require("./components/search.vue"));
 
 const app = new Vue({
   el: "#app"
+});
+
+const search = new Vue({
+  el: "#search"
 });

@@ -4,9 +4,6 @@
     <div class="col-md-12">
       <div class="row">
         <h5> <strong>{{ this.weathers.title }} weather forecast for the next 6 days</strong> </h5>
-        <br>
-        <br>
-        <br>
       </div>
     </div>
 
@@ -26,7 +23,6 @@ export default {
     };
   },
   mounted() {
-    // console.log(this.defaultcities);
     this.getCityWeatherDetails(this.defaultcities);
   },
   methods: {
@@ -39,7 +35,6 @@ export default {
         )
         .then(({ data }) => {
           t.weathers = data;
-          console.log(data);
           this.mute = false;
         });
     }
