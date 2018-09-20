@@ -29,13 +29,11 @@ export default {
             swal("No results were found.", "Try changing the keyword!");
           } else {
             t.weathers = data;
-            // console.log(t.weathers[0].title);
+           
             t.city = t.weathers[0].title;
             t.woeid = t.weathers[0].woeid;
             location.href = "/search/" + t.city + "/" + t.woeid;
-            // t.weathers = data;
-            // console.log(data);
-            // this.mute = false;
+           
           }
         });
     }
